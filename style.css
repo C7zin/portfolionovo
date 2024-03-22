@@ -241,11 +241,17 @@ span {
     grid: 3rem;
 }
 
+.projetos-cartao img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
 .projetos-cartao {
     position: relative;
     height: 30rem;
-    width: 74rem;
-    border-radius: 20px;
+    width: 55rem;
+    border-radius: 30px;
     overflow: hidden;
 }
 
