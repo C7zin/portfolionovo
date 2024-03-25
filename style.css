@@ -292,6 +292,23 @@ span {
     box-shadow: 0 0 2rem #fe9c1e;
 }
 
+.btn3 {
+    display: inline-block;
+    background: #fe9c1e;
+    margin: 2rem 0 0 1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.3rem;
+    color: #0F0F0F;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn3:hover {
+    color: #fe9c1e;
+    background: #0F0F0F;
+    box-shadow: 0 0 1rem #fe9c1e;
+}
 
 /* SEÇÕES CONTATO  */
 .contato {
