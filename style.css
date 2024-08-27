@@ -238,7 +238,6 @@ span {
 .projetos-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid: 3rem;
     gap: 30px;
 }
 
