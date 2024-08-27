@@ -239,6 +239,7 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid: 3rem;
+    gap: 30px;
 }
 
 .projeto-cartao {
@@ -247,11 +248,12 @@ span {
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
 .projeto-cartao img{
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -310,6 +312,8 @@ span {
     box-shadow: 0 0 1rem #fe9c1e;
 }
 
+
+
 /* SEÇÕES CONTATO  */
 .contato {
     display: flex;
@@ -341,7 +345,9 @@ hr {
     border-bottom: thin solid #fff;
 }
 
+.mais-projetos{
 
+}
 
 
 /* RESPONSIVIDADE  */
