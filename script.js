@@ -34,7 +34,7 @@ ScrollReveal().reveal('.profile-pic, .sobremim-items, .habilidades-items,.projet
 
 // <!-- SEÇÕES TYPING ANIMATION-->
  var typed6 = new Typed('.animated-text', {
-    strings: ['Web Developer', 'Front-End'],
+    strings: ['Web Developer', 'Front-End', 'Back-End'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
