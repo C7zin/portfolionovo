@@ -234,64 +234,89 @@ span {
     justify-content: center;
     flex-direction: column;
 }
-
-.projetos-items {
+/* Container dos Projetos */
+.projects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-}
-
-.projeto-cartao {
-    position: relative;
-    height: 25rem;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card de Projetos */
+  .project-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 1rem;
-}
-
-.projeto-cartao img{
-    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
     width: 100%;
+    height: 200px;
     object-fit: cover;
-    object-position: center;
-}
-
-.card-overlay{
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  }
+  
+  .project-title {
+    font-size: 1.2em;
+    color: #FFA500;
+    margin: 10px;
+  }
+  
+  .project-date,
+  .project-description {
+    font-size: 0.9em;
+    margin: 10px;
+    color: #aaa;
+  }
+  
+  .project-icons {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.card-overlay:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #0F0F0F;
-    transition: 0.4s all linear;
-}
-
-.card-overlay .bx {
+    gap: 5px;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .fab.fa-html5 {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  
+  .fa-brands.fa-css3-alt {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  
+  .project-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .github-btn,
+  .deploy-btn {
+    text-decoration: none;
     color: #fff;
-    font-size: 1.8rem;
-    padding: 1.1rem;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 0.8rem;
-    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.card-overlay .bx:hover {
-    transform: scale(1.2);
-    color: #fe9c1e;
-    background: #0F0F0F;
-    box-shadow: 0 0 2rem #fe9c1e;
-}
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-btn:hover {
+    background-color: #4078c0; /* Azul GitHub */
+  }
+  
+  .deploy-btn:hover {
+    background-color: #28a745; /* Verde */
+  }
 
 .btn3 {
     display: inline-block;
@@ -310,7 +335,6 @@ span {
     background: #0F0F0F;
     box-shadow: 0 0 1rem #fe9c1e;
 }
-
 
 
 /* SEÇÕES CONTATO  */
@@ -409,11 +433,6 @@ hr {
 @media (max-width: 620px) {
     .habilidades-items {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .projetos-items {
-        grid-template-columns: repeat(1, 1fr);
-
     }
 
     .heading {
